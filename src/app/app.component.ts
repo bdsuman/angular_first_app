@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  btnName:string="Show Your Loveble Person";
+
+  myfunction(name:string):void{
+    console.log(name+' Love You Sutopa');
+  }
 }
