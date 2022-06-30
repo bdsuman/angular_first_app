@@ -4,4 +4,6 @@
 <br>
 <br>
 <br>
-<button (click)="myfunction('Suman')">{{btnName}}</button>
+<div *ngIf="counter<5">
+  <button (click)="myfunction('Suman')">{{btnName}}</button>
+</div>

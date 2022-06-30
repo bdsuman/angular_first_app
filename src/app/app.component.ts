@@ -7,8 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   btnName:string="Show Your Loveble Person";
-
+  counter:number =0;
   myfunction(name:string):void{
-    console.log(name+' Love You Sutopa');
+    
+    this.counter++;
+    console.log(name+' Love You Sutopa => '+this.counter);
+
   }
 }
