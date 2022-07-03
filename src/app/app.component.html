@@ -5,7 +5,14 @@
 <br>
 <br>
 <app-test></app-test>
-<app-new-test></app-new-test>
 <div *ngIf="counter<5">
   <button (click)="myfunction('Suman')">{{btnName}}</button>
+</div>
+<br>
+<div>
+    <div *ngFor="let i of userList">
+        <div>Before Calling Component</div>
+            <app-new-test [master]=i (userName)="onClickHandler($event)"></app-new-test>
+        <div>After Calling Component</div>
+    </div>
 </div>

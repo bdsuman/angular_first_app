@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { EventEmitter } from '@angular/core';
+import { Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-new-test',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-test.component.css']
 })
 export class NewTestComponent implements OnInit {
-
+  @Input('master') masterName = '';
+  @Output() userName = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  onCardClick(){
+    this.userName.emit(this.masterName);
+  }
 }
