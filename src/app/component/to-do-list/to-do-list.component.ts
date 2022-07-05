@@ -31,7 +31,8 @@ export class ToDoListComponent implements OnInit {
     return this.allItems.filter(item => this.filter === 'done' ? item.done : !item.done);
   }
   addItem(description: string) {
-    this.allItems.push({
+    // replace unshift=> push list last insertion
+    this.allItems.unshift({
       description,
       done: false
     });
