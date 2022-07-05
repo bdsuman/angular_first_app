@@ -21,4 +21,5 @@ export class AppComponent {
   onClickHandler(str:string){
     console.log(str+" was clicked")
   }
+  
 }

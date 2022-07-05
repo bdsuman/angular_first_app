@@ -1,18 +1,21 @@
 <div class="toolbar" role="banner">
   <h1>My First App In Angular</h1>
-</div>
+</div> 
+
 <br>
 <br>
 <br>
 <app-test></app-test>
-<div *ngIf="counter<5">
+
+<!--<div *ngIf="counter<5">
   <button (click)="myfunction('Suman')">{{btnName}}</button>
-</div>
+</div>-->
 <br>
-<div>
+<!-- <div>
     <div *ngFor="let i of userList">
         <div>Before Calling Component</div>
             <app-new-test [master]=i (userName)="onClickHandler($event)"></app-new-test>
         <div>After Calling Component</div>
     </div>
-</div>
+</div> -->
+<app-to-do-list></app-to-do-list>
