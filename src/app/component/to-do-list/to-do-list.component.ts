@@ -31,9 +31,14 @@ export class ToDoListComponent implements OnInit {
     return this.allItems.filter(item => this.filter === 'done' ? item.done : !item.done);
   }
   addItem(description: string) {
-    this.allItems.unshift({
+    this.allItems.push({
       description,
       done: false
     });
+  }
+  removeItem(listIndex: number) {
+    console.log(listIndex);
+    this.allItems.splice(listIndex, 1);
+   // array.splice(index, 1)
   }
 }

@@ -13,6 +13,6 @@
     <button class="btn-primary" (click)="addItem(newItem.value)">Add</button>
     
     <ul>
-      <li *ngFor="let item of items">{{item.description}}</li>
+      <li *ngFor="let item of items;let i=index">{{item.description}}&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn-primary" (click)="removeItem(i)">Remove</button></li>
     </ul>
   </div>

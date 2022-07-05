@@ -1,0 +1,18 @@
+ul {
+    white-space: nowrap;
+    height: 1em;
+    width: 100%;
+   }
+   
+   li {
+    list-style-type: none;
+    width: 100%;
+    height: 2em;
+    overflow-x: auto; /* change to hidden if that's what you want */
+    float: left;
+    margin-right: 10px;
+   }
+   .btn-primary{
+    color: red;
+   }
+   
