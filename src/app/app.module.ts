@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './component/test/test.component';
 import { NewTestComponent } from './component/new-test/new-test.component';
 import { ToDoListComponent } from './component/to-do-list/to-do-list.component';
+import { HeaderComponent } from './component/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
     NewTestComponent,
-    ToDoListComponent
+    ToDoListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
